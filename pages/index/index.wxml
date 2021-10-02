@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<View class="body">
+  <View class="head">   搜索
+  </View>
+  <View class="list-wrap">
+    <SCroll-view class="list">
+      <View class="list-scroll-view">
+        <View wx:for="{{list}}" class="course-card">
+          <View catchtap="enterContent" data-id="{{item.id}}">
+            <View>
+              <image src="{{item.coverPath}}" mode="widthFix"></image>
+            </View>
+            <view  class="c">
+            <View class="B">{{item.nameIntro}}</View>
+            <View wx:if="{{item.price>0}}" class="price"> 价格：￥{{item.price}}</View>
+            <View wx:else class="price"> 免费</View>
+            <View class="time">{{item.activeTime}}</View>
+          </view>
+          </View>
+        </View>
+
+      </View>
+    </SCroll-view>
+  </View>
+</View>

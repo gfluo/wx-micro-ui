@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<View class="body">
+  <View class="head">头部</View>
+  <View class="list-wrap">
+    <SCroll-view class="list">
+      <View class="list-scroll-view">
+        <View wx:for="{{list}}" class="course-card">
+          <View>
+            <image src="{{item.coverPath}}" mode="widthFix"></image>
+          </View>
+          <View class="title">{{item.name}}</View>
+          <View class="B">{{item.nameIntro}}</View>
+          <View wx:if="{{item.price>0}}" class="price"> {{item.price}}</View>
+          <View wx:else class="price"> {{item.price}}</View>
+          <View class="time">{{item.activeTime}}</View>
+        </View>
+
+      </View>
+    </SCroll-view>
+  </View>
+
+</View>

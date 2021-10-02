@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的活动订单",
+  "usingComponents": {
+    "mp-gallery": "weui-miniprogram/gallery/gallery"
+  }
+}

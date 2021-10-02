@@ -1,0 +1,4 @@
+<!--pages/test/test.wxml-->
+<View class="A">
+  <text>性格测试还在完善中，敬请期待！</text>
+</View>

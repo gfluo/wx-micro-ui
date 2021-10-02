@@ -1,0 +1,58 @@
+/* pages/me/me.wxss */
+.nav{
+  display: flex;
+  flex-flow: nowrap;
+  align-items:center;
+  font-family: FangSong;
+  }
+ 
+  .top{
+  width: 150rpx;
+  height: 150rpx;
+  /* margin: 0 auto; */
+  margin-bottom: 20px;
+  margin-left :20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color:#DDD;
+   }
+
+   .B{
+    margin-left :10px;
+   
+   }
+   
+  .nickname{
+  margin-bottom: 10rpx;
+  text-align: center;
+  }
+  .item{
+  height: 70rpx;
+  background-color: #fff;
+  margin: 20rpx;
+  display: flex;
+  font-family: FangSong;
+   }
+  /* .left{
+  display: flex;
+  justify-content: flex-start;
+  flex-grow: 1;
+  } */
+  .right{
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: #999;
+  margin-right: 20rpx;
+  }
+ .line1{
+   background: #ccc;
+   width: 100%;
+   height: 5px;
+ }
+ .line2{
+  background: #ccc;
+  width: 100%;
+  height: 1px;
+}
+

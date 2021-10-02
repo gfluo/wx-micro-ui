@@ -1,0 +1,63 @@
+/**index.wxss**/
+
+/** page {
+ text-align: center;
+}**/
+.body {
+  display: flex;
+  flex-direction: column;
+}
+.head, .bottom {
+   background-color: #ddd;
+}
+
+.list-wrap{
+  flex-grow: 1;
+  position: relative;
+}
+
+  /* .list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+} */
+
+  .list-scroll-view{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+.course-card {
+  width: 47vw; /* 47*2=94 */
+  margin-top: 10px;
+  margin-bottom: 10px;
+ /* margin: 10px;*/
+}
+
+.course-card image {
+  width: 100%;
+  margin: 10rpx;
+  border-radius: 10px;
+
+}
+
+.B {
+  font-size: 16px;
+}
+
+.price {
+  font-size: 14pxx;
+  color: #f7760c;
+}
+
+.time {
+  font-size: 14pxx;
+  color: #0c1cf7;
+}
+

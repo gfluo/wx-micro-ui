@@ -1,0 +1,4 @@
+<!--pages/myfav/myfav.wxml-->
+<View class="A">
+<text >您暂时没有优惠券哦！</text>
+</View>

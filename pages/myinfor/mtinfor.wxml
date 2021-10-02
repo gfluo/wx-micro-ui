@@ -1,0 +1,43 @@
+<!--pages/myinfor/mtinfor.wxml-->
+
+
+<view class='top'>
+  <open-data type="userAvatarUrl"></open-data>
+</view>
+<!-- <view class='top'>
+      <view class="A" bindtap='upShopLogo'>
+        <text>点击\t上传照片</text>
+      </view>
+            　<image src='{{userimg}}'></image> 
+  </view>-->
+<form bindsubmit="infoSubmit">
+  <view class="section">
+    <input bindinput="usernameChange" name="input" type="text" required name="username" value="{{username}}" placeholder="请输入姓名" />
+  </view>
+  <view class="section">
+    <radio-group bindchange="sexChange">
+      <label class="radio_click clearfix" wx:for="{{sexShows}}" wx:key="key">
+        <text>{{item.value}}</text>
+        <radio class="radio" color="#09f" value="{{item.value}}" checked="{{item.checked}}"></radio>
+      </label>
+    </radio-group>
+  </view>
+  <view class="section">
+    <input bindinput="mobileChange" name="input" type="text" required name="mobile" value="{{mobile}}" placeholder="请输入手机号" />
+  </view>
+  <view class="section">
+    <input bindinput="birthdayChange" name="input" type="text" required name="birthday" value="{{birthday}}" placeholder="请输入出生年月" />
+  </view>
+  <view class="section">
+    <input bindinput="addressChange" name="input" type="text" required name="address" value="{{address}}" placeholder="请输入联系地址" />
+  </view>
+  <view class="section">
+    <input bindinput="occupationChange" name="input" type="text" required name="occupation" value="{{occupation}}" placeholder="请输入职业" />
+  </view>
+  <view class="section">
+    <input bindinput="interestChange" name="input" type="text" required name="interest" value="{{interest}}" placeholder="请输入兴趣爱好" />
+  </view>
+  <view class="btn-area">
+    <button formType="submit">提交</button>
+  </view>
+</form>

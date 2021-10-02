@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/card/card",
+    "pages/me/me",
+    "pages/map/ma[",
+    "pages/content/content",
+    "pages/test/test",
+    "pages/myinfor/mtinfor",
+    "pages/myauth/myauth",
+    "pages/myintro/myintro",
+    "pages/myactive/myactive",
+    "pages/myfav/myfav",
+    "pages/myjion/myjion",
+    "pages/myadv/myadv"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "腾狮文化",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#F00",
+    "backgroundColor": "#ddd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/about/about",
+        "iconPath": "/image/tabbar/type1.png",
+        "selectedIconPath": "/image/tabbar/type.png",
+        "text": "关于我们"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/image/tabbar/index1.png",
+        "selectedIconPath": "/image/tabbar/index.png",
+        "text": "线下活动"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "/image/tabbar/center1.png",
+        "selectedIconPath": "/image/tabbar/center.png",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

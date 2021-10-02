@@ -1,0 +1,56 @@
+<!--pages/me/me.wxml-->
+
+<view class='nav'>
+  <view class='top'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <view>
+    <View class="B"> <Text>{{userName}}</Text></View>
+    <View class="B">
+      
+    </View>
+
+
+
+
+    <!-- <View wx:if="{{ userSex1==ture}}"> -->
+    <!-- <view flex:auto>
+    <image src="../../image/man.png"></image>
+  </view> -->
+    <!-- <View wx:else>
+    <image mode="widthFix" src="../../image/Fman.png"></image>
+  </view> -->
+  </view>
+</view>
+
+
+<View class='line1'></View>
+<view class='item' bindtap='myinfor'>
+  <text class='left'>我的资料</text><text class='right'>></text>
+</view>
+<View class='line2'></View>
+<view class='item' bindtap='myauth'>
+  <text class='left'>我的认证</text><text class='right'>></text>
+</view>
+<View class='line2'></View>
+<view class='item' bindtap='myintror'>
+  <text class='left'> 自我介绍</text><text class='right'>></text>
+</view>
+<View class='line2'></View>
+<view class='item' bindtap='test'>
+  <text class='left'> 性格测试</text><text class='right' wx:if="{{myinfo.email==''|| myinfo.email==null}}">未测试></text><text
+    class='right' wx:else>{{myinfo.email}}</text>
+</view>
+<View class='line1'></View>
+<view class='item' bindtap='active'>
+  <text class='left'> 我参加的活动</text><text class='right'>></text>
+</view>
+<View class='line2'></View>
+<view class='item' bindtap='myfavv'>
+  <text class='left'>我的优惠券</text><text class='right'>></text>
+</view>
+<View class='line1'></View>
+<view class='item' bindtap='myadv'>
+  <text class='left'>投诉建议</text><text class='right'>></text>
+</view>
+

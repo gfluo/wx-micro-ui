@@ -1,0 +1,10 @@
+<!--pages/map/ma[.wxml-->
+
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" bindtap='mapclick'></map>
+</view>
+<view class="map_text">
+  <text class="h1">名称：{{textData.name}}</text>
+  <text>位置：{{textData.desc}}</text>
+  <button plain class='btn' type="primary" bindtap="useAddressBtn" >使用当前位置</button>
+</view>
