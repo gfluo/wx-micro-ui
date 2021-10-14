@@ -1,0 +1,11 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@vant/weapp": {
+      "version": "1.9.1",
+      "resolved": "https://registry.npmmirror.com/@vant/weapp/download/@vant/weapp-1.9.1.tgz",
+      "integrity": "sha1-pJAmIDFWhhLdR2bvBOHaZr7uMkE="
+    }
+  }
+}

@@ -72,7 +72,7 @@ Page({
 
   myinfor: function (e) {
     wx.navigateTo({
-      url: '/pages/myinfor/mtinfor'
+      url: '/pages/myInfo/myInfo'
     })
   },
   myauth: function (e) {

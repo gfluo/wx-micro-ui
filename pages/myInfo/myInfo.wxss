@@ -1,0 +1,10 @@
+/* pages/myInfo/myInfo.wxss */
+.top {
+    width: 160rpx;
+    height: 160rpx;
+    margin: 0 auto;
+    margin-bottom: 0%;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #DDD;
+  }
