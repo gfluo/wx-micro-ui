@@ -11,7 +11,8 @@
                         <label class="weui-label">昵称</label>
                     </view>
                     <view class="weui-cell__bd">
-                        <input name="username" class="weui-input" placeholder="输入您的昵称" placeholder-class="weui-input__placeholder" />
+                        <input value="{{username}}" name="username" class="weui-input" placeholder="必填"
+                            placeholder-class="weui-input__placeholder" />
                     </view>
                 </view>
                 <view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
@@ -19,8 +20,8 @@
                         <label class="weui-label">性别</label>
                     </view>
                     <view class="weui-cell__bd">
-                        <picker aria-role="combobox" bindchange="bindPicker3Change" range="{{sexOptions}}">
-                            <view class="weui-select">{{sexOptions[0]}}</view>
+                        <picker name="sex" aria-role="combobox" bindchange="sexChange" range="{{sexOptions}}">
+                            <view class="weui-select">{{sexOptions[sexDefaultIndex]}}</view>
                         </picker>
                     </view>
                 </view>
@@ -30,8 +31,8 @@
                     </view>
                     <view class="weui-cell__bd">
                         <picker mode="date" aria-role="combobox" aria-labelledby="js_date" value="{{date}}"
-                            start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-                            <view class="weui-input">{{date}}</view>
+                            start="1900-01-01" end="2099-01-01" bindchange="birthdayChange">
+                            <view class="weui-input">{{birthday}}</view>
                         </picker>
                     </view>
                 </view>
@@ -40,7 +41,8 @@
                         <label class="weui-label">职业</label>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" placeholder="输入您的职业" placeholder-class="weui-input__placeholder" />
+                        <input value="{{occupation}}" name="occupation" class="weui-input" placeholder="选填"
+                            placeholder-class="weui-input__placeholder" />
                     </view>
                 </view>
                 <view class="weui-cell weui-cell_active">
@@ -48,7 +50,7 @@
                         <label class="weui-label">联系电话</label>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" placeholder="填写联系方式" type="number"
+                        <input value="{{mobile}}" name="mobile" class="weui-input" placeholder="必填" type="number"
                             placeholder-class="weui-input__placeholder" />
                     </view>
                 </view>
@@ -57,7 +59,7 @@
                         <label class="weui-label">联系地址</label>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" placeholder="填写联系地址" type="string"
+                        <input value="{{address}}" name="address" class="weui-input" placeholder="选填" type="string"
                             placeholder-class="weui-input__placeholder" />
                     </view>
                 </view>
@@ -66,7 +68,7 @@
                         <label class="weui-label">兴趣爱好</label>
                     </view>
                     <view class="weui-cell__bd">
-                        <input class="weui-input" placeholder="请输入兴趣爱好" type="string"
+                        <input value="{{interest}}" name="interest" class="weui-input" placeholder="选填" type="string"
                             placeholder-class="weui-input__placeholder" />
                     </view>
                 </view>

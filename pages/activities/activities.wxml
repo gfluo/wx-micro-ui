@@ -1,0 +1,40 @@
+<View class="body">
+    <view class="weui-search-bar {{inputShowed ? 'weui-search-bar_focusing' : ''}}" id="searchBar">
+        <form class="weui-search-bar__form" aria-role="combobox" aria-haspopup="true"
+            aria-expanded="{{inputVal.length > 0 ? 'true' : 'false'}}" aria-owns="searchResult">
+            <view class="weui-search-bar__box">
+                <i class="weui-icon-search"></i>
+                <input aria-controls="searchResult" type="text" class="weui-search-bar__input" placeholder="搜索"
+                    value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                <view aria-role="button" aria-label="清除" class="weui-icon-clear" wx:if="{{inputVal.length > 0}}"
+                    bindtap="clearInput"></view>
+            </view>
+            <label class="weui-search-bar__label" bindtap="showInput">
+                <i class="weui-icon-search"></i>
+                <span class="weui-search-bar__text">搜索</span>
+            </label>
+        </form>
+        <view aria-role="button" class="weui-search-bar__cancel-btn" bindtap="hideInput">取消</view>
+    </view>
+    <View class="list-wrap">
+        <SCroll-view class="list">
+            <View class="list-scroll-view">
+                <View wx:for="{{activities}}" class="course-card" wx:key="id">
+                    <View catchtap="enterContent" data-id="{{item.id}}">
+                        <View>
+                            <image src="{{item.cover}}" mode="widthFix"></image>
+                        </View>
+                        <view class="c">
+                            <View class="B">{{item.title}}</View>
+                            <View wx:if="{{item.amount > 0}}" class="price"> 价格：￥{{item.amount}}</View>
+                            <View wx:else class="price"> 免费</View>
+                            <View class="time">活动时间：{{item.startTime}}</View>
+                            <View class="time">活动时长：{{item.period}}</View>
+                        </view>
+                    </View>
+                </View>
+
+            </View>
+        </SCroll-view>
+    </View>
+</View>

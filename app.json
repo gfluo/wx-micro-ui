@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/activities/activities",
+    "pages/activityDetail/activityDetail",
     "pages/logs/logs",
     "pages/about/about",
     "pages/card/card",
     "pages/me/me",
-    "pages/map/ma[",
-    "pages/content/content",
+    "pages/map/map",
     "pages/test/test",
     "pages/myInfo/myInfo",
     "pages/myauth/myauth",
@@ -37,7 +37,7 @@
         "text": "关于我们"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/activities/activities",
         "iconPath": "/image/tabbar/index1.png",
         "selectedIconPath": "/image/tabbar/index.png",
         "text": "线下活动"
