@@ -1,5 +1,8 @@
 var app = getApp()
-
+wx.showShareMenu({
+    withShareTicket: true,
+    menus: ['shareAppMessage']
+})
 Page({
     data: {
         id: 0,
@@ -16,14 +19,23 @@ Page({
         ifJoin: false,
     },
     onLoad: function (options) {
+        let id;
+        if (options.scene) {    //通过扫码过来的请求，需要接码
+            const scene = decodeURIComponent(options.scene);
+            const params = scene.split('=');
+            id = parseInt(params[1]);
+        } else {
+            id = options.id
+        }
+
         this.setData({
-            id: options.id
+            id: id
         })
         wx.request({
             url: `${app.globalData.apiServer}/api/activity/detail`,
             method: 'POST',
             data: {
-                id: options.id
+                id: id
             },
             success: (resp) => {
                 if (resp.statusCode == 200) {
@@ -114,4 +126,10 @@ Page({
             }
         })
     },
+
+    onShareAppMessage: function (object) {
+        return {
+            path: '/pages/activityDetail/activityDetail?id=' + this.data.id
+        }
+    }
 })
