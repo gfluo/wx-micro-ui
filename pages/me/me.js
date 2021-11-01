@@ -83,7 +83,7 @@ Page({
 
   myintror: function (e) {
     wx.navigateTo({
-      url: '/pages/myintro/myintro'
+      url: '/pages/myIntro/myIntro'
     })
   },
   test: function (e) {

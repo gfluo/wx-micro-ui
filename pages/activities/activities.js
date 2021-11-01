@@ -24,5 +24,10 @@ Page({
         wx.navigateTo({
             url: '/pages/activityDetail/activityDetail?id=' + activityId
         })
+    },
+    onShareAppMessage: function (object) {
+        return {
+            path: '/pages/activities/activities'
+        }
     }
 })
