@@ -29,5 +29,10 @@ Page({
         return {
             path: '/pages/activities/activities'
         }
+    },
+    onShareTimeline: () => {
+        return {
+            imageUrl: '', // 图片 URL
+        }
     }
 })

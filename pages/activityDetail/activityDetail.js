@@ -131,5 +131,12 @@ Page({
         return {
             path: '/pages/activityDetail/activityDetail?id=' + this.data.id
         }
+    },
+
+    onShareTimeline: function() {
+        return {
+            title: this.data.title,
+            imageUrl: this.data.cover, // 图片 URL
+        }
     }
 })
