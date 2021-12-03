@@ -8,7 +8,7 @@
         </View>
     </View>
     <View class="F">
-        <View>￥费用</View>
+        <View > ￥{{amountDescribe}}: </View>
         <View>
             <text class="price" decode="{{true}}">￥{{amount}}</text>
         </View>

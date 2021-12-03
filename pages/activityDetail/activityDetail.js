@@ -9,6 +9,7 @@ Page({
         cover: "https://tse1-mm.cn.bing.net/th/id/OIP-C.FaG6dzohGs3q45-DwsEyQQHaEK?w=317&h=180&c=7&r=0&o=5&pid=1.7",
         title: "相约下午茶",
         amount: 10,
+        amountDescribe: "",
         startTime: "2021-10-17 18:00:00",
         endTime: "",
         period: 5,
