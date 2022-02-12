@@ -45,7 +45,7 @@
     <view class="body">
         <view class="jieshao">
             <View>
-                <rich-text nodes="{{describe}}"></rich-text>
+                <mp-html content="{{describe}}" />
             </View>
         </view>
         <!-- 腾狮文化缘起 -->
