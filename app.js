@@ -27,6 +27,6 @@ App({
         }
       },
       globalData: {
-        apiServer: 'https://www.szstswh.com'
+        apiServer: 'https://www.szstswh.com/fly'
       }
 })
