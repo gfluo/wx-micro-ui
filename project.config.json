@@ -22,9 +22,9 @@
         "uploadWithSourceMap": true,
         "compileHotReLoad": false,
         "lazyloadPlaceholderEnable": false,
-        "useMultiFrameRuntime": false,
-        "useApiHook": false,
-        "useApiHostProcess": false,
+        "useMultiFrameRuntime": true,
+        "useApiHook": true,
+        "useApiHostProcess": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
@@ -43,7 +43,7 @@
     },
     "compileType": "miniprogram",
     "libVersion": "2.19.0",
-    "appid": "wx4bfe6b7ee9a89f2c",
+    "appid": "wx33d2867c2d783db1",
     "projectname": "TSWH",
     "debugOptions": {
         "hidedInDevtools": []

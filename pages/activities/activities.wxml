@@ -27,7 +27,7 @@
                         <view class="c">
                             <View class="B">{{item.title}}</View>
                             <View wx:if="{{item.amount > 0}}" class="price"> {{item.amountDescribe}}：￥{{item.amount}}</View>
-                            <View wx:else class="price"> 免费</View>
+                            <View wx:else class="price"> 惠民活动：</View>
                             <View class="time">活动时间：{{item.startTime}}</View>
                             <View class="time">活动时长：{{item.period}}</View>
                         </view>
