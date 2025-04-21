@@ -21,6 +21,12 @@
     color: #f7760c;
   }
   
+  .free {
+    font-size: 14pxx;
+    color: #14f70c;
+    font-family: FangSong;
+  }
+
   .G{
     font-family: FangSong;
     line-height: 2;
