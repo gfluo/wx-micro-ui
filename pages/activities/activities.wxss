@@ -62,6 +62,12 @@
     color: #f7760c;
     font-family: FangSong;
   }
+
+  .free {
+    font-size: 14pxx;
+    color: #6af70c;
+    font-family: FangSong;
+  }
   
   .time {
     font-size: 14pxx;
