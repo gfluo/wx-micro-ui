@@ -1,0 +1,43 @@
+<!--src/pages/activities/activities.wxml-->
+<van-search value="{{ searchValue }}" placeholder="请输入搜索关键词" bind:change="onSearchChange" bind:search="onSearchSubmit" />
+<button wx:if="{{activities.length > 10}}" shape="round" class="back-to-top" bindtap="backToTop">
+  <image class="arrow-icon" src="/src/assets/images/backtotop.png" mode="widthFix" />
+</button>
+<view class="page">
+  <view class="grid">
+    <block wx:for="{{activities}}" wx:key="id">
+      <view class="card" bindtap="onCardClick" data-id="{{item.id}}">
+        <image class="cover" src="{{item.cover}}" mode="widthFix" />
+        <view class="info">
+          <view class="title">{{item.title}}</view>
+          <view class="meta">
+            <view wx:if="{{item.amount > 0}}" class="cost">
+              <text>{{item.amountDescribe}}<text class="icon">￥</text>{{item.amount}}</text>
+            </view>
+            <view wx:else class="cost">
+              <text>公益活动</text>
+            </view>
+            <view class="time">
+              <text class="label">开始：</text>
+              <text>{{item.startTime}}</text>
+            </view>
+            <view class="duration">
+              <text class="label">时长：</text>
+              <text>{{item.period}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+
+<view wx:if="{{loading}}" class="loading-box">
+  <view class="spinner"></view>
+  <text class="loading-text">加载中...</text>
+</view>
+
+<!-- 没有更多提示 -->
+<view wx:elif="{{noMore}}" class="no-more">
+  <text>已经到底啦 👋</text>
+</view>

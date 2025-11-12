@@ -5,6 +5,7 @@
     "include": []
   },
   "setting": {
+    "useCompilerPlugins": ["typescript"],
     "urlCheck": false,
     "es6": false,
     "enhance": true,
@@ -40,7 +41,11 @@
     "disableUseStrict": false,
     "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false
+    "compileWorklet": false,
+    "localPlugins": false,
+    "condition": false,
+    "swc": false,
+    "disableSWC": true
   },
   "compileType": "miniprogram",
   "libVersion": "3.8.1",
@@ -50,5 +55,6 @@
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "simulatorPluginLibVersion": {}
 }

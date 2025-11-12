@@ -2,13 +2,18 @@
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
+    "@types/wechat-miniprogram": "^3.4.8",
+    "@vant/weapp": "^1.11.7",
     "mp-html": "^2.2.1"
   },
   "name": "wx-micro-ui",
   "description": "",
   "version": "1.0.0",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "miniprogram-api-typings": "^4.1.0",
+    "typescript": "^5.9.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

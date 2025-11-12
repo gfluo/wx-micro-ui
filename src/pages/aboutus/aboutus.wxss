@@ -1,0 +1,81 @@
+.page {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+  padding: 24rpx 0;
+}
+
+.container {
+  margin: 30rpx;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16rpx;
+  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.05);
+  padding: 40rpx 32rpx;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24rpx;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: 1rpx;
+}
+
+.paragraph {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  color: #333;
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+
+.paragraph .highlight {
+  color: #111111; /* 更深黑色 */
+  font-weight: 700; /* 加粗 */
+}
+.list-paragraph {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  color: #4a4a4a; /* 与正文一致的深灰色 */
+  font-size: 28rpx;
+  line-height: 1.8;
+}
+
+.list-item {
+  display: block;
+  margin-left: 24rpx; /* 轻微缩进，保持整洁 */
+  line-height: 1.8;
+}
+
+
+.subtitle {
+  display: block;
+  font-weight: 600;
+  margin: 24rpx 0 12rpx 0;
+  color: #222;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40rpx;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #e0e6f1; /* 柔和分隔线 */
+}
+
+.footer-text {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #3b6ea5; /* 清新淡蓝色 */
+  letter-spacing: 1rpx;
+}
+

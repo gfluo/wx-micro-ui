@@ -1,0 +1,70 @@
+<!--src/pages/aboutus/aboutus.wxml-->
+<!-- <image mode="widthFix" src="../../assets/images/aboutus1.png"></image> -->
+<van-image width="100%" height="14rem" fit="cover" src="/src/assets/images/aboutus.png" />
+<view class="page">
+  <!-- 中文部分 -->
+  <view class="container card">
+    <view class="header">
+      <text class="title">知时节</text>
+    </view>
+
+    <view>
+      <text class="paragraph">
+        缘起中国“二十四节气”民俗智慧，深耕皮影非遗传承七载，是一家以“传承非遗文化、讲好中国故事”为核心使命的教育与文化传播平台。我们致力于以前沿教育理念激活传统文化生命力，让古老智慧与当代创造在青少年心中生根发芽。
+      </text><text class="paragraph">
+        公司立足青少年全球素养培育，独创“研产学+人工智能+跨文化协同”创新模式，将中华传统美德、人类文明发明创造与自然资源保护理念，深度融入AI驱动的寓教于乐研学实践，构建跨时代文化学习新体系。
+      </text><text class="paragraph">
+        - 国内方向：聚焦“节气+非遗+中医药”，联合图书馆、文化馆及学校第二课堂共建“学而时习之工坊”。运用智能设计工具创作民俗非遗作品，借虚拟仿真技术还原上古文化与华夏文明中的非遗技艺传承场景。
+      </text><text class="paragraph">
+        - 国际方向：打造“全球非遗PBL项目”，推出“一带一路非遗共创计划”。联动联合国青少年非遗传承项目，组织中外青少年以AI技术复原人类文明经典发明，用皮影艺术演绎全球跨文化故事，促进文明互鉴与青年共创。
+      </text><text class="paragraph">
+        - 未来探索：布局“航天（海南文昌）+AI”，开创青少年航天知识科普体系。结合华夏上古星宿文化与二十四节气历法，以AI交互形式解读其与航天轨道的内在关联，让孩子在学习中读懂“仰望星空”的中国智慧。
+      </text><text class="paragraph">
+        未来五至十年，知时节将以研学实践为基石，实现传统技艺的三维复刻与全球共享；推动非遗音像与影视IP的智能创作，助力文化内容国际化传播；同时搭建“全球非遗教育协作网络”，联合国际教育机构共建非遗教育标准。
+      </text><text class="paragraph">
+        公司以“家族传承”为文化纽带，培养具备AI思维与全球视野的新一代文化继承者，致力于成为AI时代跨越时空、连接全球的中华文化传播者，让非遗在智能时代——活在当下，走向世界。
+      </text>
+      <view class="footer">
+        <text class="footer-text">知时节，见天地，怀家国</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 英文部分 -->
+  <view class="container card">
+    <view class="header">
+      <text class="title">Zhishijie (Nanjing) Cultural Media Co., Ltd.</text>
+    </view>
+
+    <view class="section">
+      <text class="paragraph">
+        Rooted in the folk wisdom of China’s <text class="highlight">Twenty-Four Solar Terms</text>, Zhishijie (Nanjing) Cultural Media Co., Ltd. has devoted seven years to the inheritance of <text class="highlight">shadow puppetry as an intangible cultural heritage</text>. Guided by the mission of “inheriting intangible culture and telling China’s story to the world,” the company is an educational and cultural communication platform that revitalizes traditional culture through innovative pedagogy—allowing ancient wisdom to take root and flourish in the minds of young learners.
+      </text><text class="paragraph">
+        Anchored in <text class="highlight">global literacy cultivation for youth</text>, Zhishijie adopts an innovative model of “<text class="highlight">Research–Production–Learning + Artificial Intelligence + Cross-Cultural Collaboration.</text>” It integrates traditional Chinese virtues, human scientific inventions, and ecological protection concepts into AI-driven, experiential learning, building a <text class="highlight">new trans-era cultural education ecosystem.</text>
+      </text><text class="paragraph">
+        <text class="subtitle">Domestic Focus: Solar Terms × Intangible Heritage × Traditional Medicine</text>
+        Zhishijie collaborates with libraries, cultural centers, and school enrichment programs to establish the <text class="highlight">“Xue Er Shi Xi Zhi Workshop” (Learning & Practicing Studio)</text>. Through intelligent design tools, students create folk art and intangible heritage mini-projects. Virtual simulation technologies reconstruct ancient Chinese craftsmanship and scenes of cultural transmission within Chinese civilization.
+      </text><text class="paragraph">
+        <text class="subtitle">International Focus: Global Intangible Heritage PBL Projects</text>
+        The company launched the <text class="highlight">“Belt and Road Intangible Heritage Co-Creation Initiative,”</text> connecting with UNESCO youth programs to foster cross-cultural collaboration. Chinese and international students use AI technologies to recreate classic human inventions and retell them through <text class="highlight">shadow puppetry and other art forms</text>, promoting mutual learning among civilizations and youth innovation across borders.
+      </text><text class="paragraph">
+        <text class="subtitle">Future Vision: Aerospace (Wenchang, Hainan) × AI</text>
+        Zhishijie is building a youth aerospace education system that combines <text class="highlight">ancient Chinese astronomy and the Twenty-Four Solar Terms calendar</text>. Through interactive AI experiences, students explore the intrinsic connections between traditional star lore and modern space orbits—understanding the Chinese wisdom of “gazing at the stars with reverence.”
+      </text><text class="paragraph">
+        <text class="list-paragraph">
+          Over the next five to ten years, Zhishijie aims to:
+          <text class="list-item">• Establish a <text class="highlight">3D archive and global sharing platform</text> for traditional crafts through hands-on learning;</text>
+          <text class="list-item">• Advance <text class="highlight">AI-empowered audiovisual and film IP production</text> for the international dissemination of intangible cultural content;</text>
+          <text class="list-item">• Build a <text class="highlight">Global Intangible Heritage Education Network</text>, co-creating standards with international educational institutions.</text>
+        </text>
+
+      </text><text class="paragraph">
+        With <text class="highlight">family heritage</text> as its cultural bond, the company nurtures a new generation of cultural inheritors equipped with <text class="highlight">AI literacy and global vision</text>. Zhishijie is committed to becoming a <text class="highlight">bridge for Chinese culture in the AI era</text>—reviving heritage in the present and sharing its brilliance with the world.
+      </text>
+    </view>
+
+    <view class="footer">
+      <text class="footer-text">Know the Seasons, Embrace the World, Cherish the Motherland</text>
+    </view>
+  </view>
+</view>

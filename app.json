@@ -1,16 +1,21 @@
 {
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "van-search": "@vant/weapp/search/index",
+    "van-button": "@vant/weapp/button/index"
+  },
   "pages": [
-    "pages/activities/activities",
+    "src/pages/aboutus/aboutus",
+    "src/pages/activities/activities",
     "pages/activityDetail/activityDetail",
     "pages/logs/logs",
-    "pages/about/about",
     "pages/card/card",
     "pages/me/me",
     "pages/map/map",
     "pages/test/test",
     "pages/myInfo/myInfo",
     "pages/myauth/myauth",
-    "pages/myIntro/myIntro",
+    "pages/myintro/myintro",
     "pages/myactive/myactive",
     "pages/myfav/myfav",
     "pages/myjion/myjion",
@@ -19,10 +24,9 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "知时节家灏",
+    "navigationBarTitleText": "知时节",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#666",
@@ -31,13 +35,13 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/about/about",
+        "pagePath": "src/pages/aboutus/aboutus",
         "iconPath": "/image/tabbar/type1.png",
         "selectedIconPath": "/image/tabbar/type.png",
         "text": "关于我们"
       },
       {
-        "pagePath": "pages/activities/activities",
+        "pagePath": "src/pages/activities/activities",
         "iconPath": "/image/tabbar/index1.png",
         "selectedIconPath": "/image/tabbar/index.png",
         "text": "线下活动"
