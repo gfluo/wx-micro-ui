@@ -1,0 +1,56 @@
+/* src/pages/orders/orders.wxss */
+/* 每个卡片容器 */
+.card-item {
+  width: 100%;
+  border-radius: 22rpx;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 10rpx 30rpx rgba(0, 120, 200, 0.12);
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* 图片 */
+.card-img {
+  width: 100%;
+  height: 360rpx;
+  border-radius: 22rpx 22rpx 0 0;
+  object-fit: cover;
+}
+
+/* 内容区域 */
+.card-body {
+  padding: 28rpx;
+}
+
+/* 标题 */
+.title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #064A70;
+  margin-bottom: 16rpx;
+  line-height: 1.4;
+}
+
+/* 信息文本 */
+.meta .line {
+  font-size: 26rpx;
+  color: #5b8fa8;
+  margin-bottom: 8rpx;
+}
+
+/* 状态文本 */
+.status {
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #007acc;
+  font-weight: 500;
+}
+
+/* 卡片之间的间距 */
+.space {
+  height: 28rpx;
+}

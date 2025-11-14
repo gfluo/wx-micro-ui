@@ -14,7 +14,7 @@
             <view wx:if="{{item.amount > 0}}" class="cost">
               <text>{{item.amountDescribe}}<text class="icon">￥</text>{{item.amount}}</text>
             </view>
-            <view wx:else class="cost">
+            <view wx:else class="free">
               <text>公益活动</text>
             </view>
             <view class="time">

@@ -1,13 +1,11 @@
-import { FileUrl } from "../../serverApi/index";
-
-// src/pages/aboutus/aboutus.ts
+// src/pages/myauth/myauth.ts
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    aboutusImage : FileUrl.aboutus,
+
   },
 
   /**

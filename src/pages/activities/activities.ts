@@ -1,13 +1,9 @@
-import { 
+import {
   Activity,
-  ApiUrl, 
-  getActivitiesResp 
+  ApiUrl,
+  GetActivitiesResp
 } from "../../serverApi/index";
 
-// interface PageData {
-//   activities: Activity[],
-// }
-// src/pages/activities/activities.ts
 Page({
   data: {
     searchValue: '',
@@ -36,6 +32,13 @@ Page({
     this.loadData();
   },
 
+  onCardClick(e: { currentTarget: { dataset: { id: number; }; }; }) {
+    const activityId = e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '/src/pages/activitydetail/activitydetail?id=' + activityId
+  })
+  },
+
   backToTop() {
     wx.pageScrollTo({
       scrollTop: 0,
@@ -59,7 +62,7 @@ Page({
       },
       success: (apiServerResp: {
         statusCode: number,
-        data: getActivitiesResp
+        data: GetActivitiesResp
       }) => {
         if (apiServerResp.statusCode == 200 && apiServerResp.data.errno == 0) {
           this.setData({

@@ -1,4 +1,4 @@
-import { ApiUrl, wxLoginResp } from "src/serverApi/index";
+import { ApiUrl, WxLoginResp } from "src/serverApi/index";
 
 App({
   onLaunch() {
@@ -15,7 +15,7 @@ App({
             },
             success: (apiServerResp: {
               statusCode: number,
-              data: wxLoginResp
+              data: WxLoginResp
             }) => {
               if (apiServerResp.statusCode == 200 && apiServerResp.data.errno == 0) {
                 wx.setStorageSync('openId', apiServerResp.data.data!.openId)

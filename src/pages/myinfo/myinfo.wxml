@@ -1,0 +1,67 @@
+<!-- pages/me/me.wxml -->
+
+<view class="page page-bg">
+
+  <!-- 顶部个人信息卡片 -->
+  <view class="user-card">
+    <view class="avatar-wrap">
+      <open-data type="userAvatarUrl" class="avatar"></open-data>
+    </view>
+
+    <view class="user-info">
+      <text class="user-name">{{userName || '昵称未设置'}}</text>
+      <!-- 性别图标（可选） -->
+      <image wx:if="{{myinfo.sex == 1}}" src="/image/man.png" class="gender-icon" />
+      <image wx:if="{{myinfo.sex == 2}}" src="/image/woman.png" class="gender-icon" />
+    </view>
+  </view>
+
+
+  <!-- 个人资料区域 -->
+  <view class="group">
+    <view class="item" bindtap="mydesc">
+      <text class="left">我的资料</text>
+      <text class="right-arrow">></text>
+    </view>
+
+    <view class="item" bindtap="myauth">
+      <text class="left">我的认证</text>
+      <text class="right-arrow">></text>
+    </view>
+
+    <view class="item" bindtap="myintro">
+      <text class="left">自我介绍</text>
+      <text class="right-arrow">></text>
+    </view>
+
+    <view class="item" bindtap="myauth">
+      <text class="left">性格测试</text>
+
+      <view class="right-box">
+        <text wx:if="{{!myinfo.email}}" class="right-tips">未测试</text>
+        <text wx:else class="right-value">{{myinfo.email}}</text>
+        <text class="right-arrow">></text>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 功能类 -->
+  <view class="group">
+    <view class="item" bindtap="orders">
+      <text class="left">我参加的活动</text>
+      <text class="right-arrow">></text>
+    </view>
+
+    <view class="item" bindtap="myauth">
+      <text class="left">我的优惠券</text>
+      <text class="right-arrow">></text>
+    </view>
+
+    <view class="item" bindtap="myauth">
+      <text class="left">投诉建议</text>
+      <text class="right-arrow">></text>
+    </view>
+  </view>
+
+</view>

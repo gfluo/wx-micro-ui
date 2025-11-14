@@ -1,0 +1,22 @@
+<view class="cards" wx:for="{{activities}}" wx:for-item="item" wx:key="item">
+  <navigator class="card-item" url="/pages/content/content?contentid={{item.productId}}">
+
+    <!-- 图片部分 -->
+    <image class="card-img" src="{{item.imgSrc}}" mode="aspectFill"></image>
+
+    <!-- 内容部分 -->
+    <view class="card-body">
+      <view class="title">{{item.title}}</view>
+
+      <view class="meta">
+        <view class="line">{{item.activityDate}}</view>
+        <view class="line">活动地点：{{item.address}}</view>
+      </view>
+
+      <view class="status">{{item.orderStatus}}</view>
+    </view>
+
+  </navigator>
+
+  <view class="space"></view>
+</view>

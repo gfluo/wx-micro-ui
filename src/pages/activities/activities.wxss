@@ -58,6 +58,14 @@
   gap: 4rpx;
 }
 
+.free {
+  color: #32cd32;
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 4rpx;
+}
+
 .time, .duration {
   color: #0c1cf7;
   display: flex;

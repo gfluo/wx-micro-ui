@@ -1,20 +1,35 @@
-import { FileUrl } from "../../serverApi/index";
-
-// src/pages/aboutus/aboutus.ts
+// src/pages/orders/orders.ts
+import { ApiUrl, GetOrdersResp, Order } from "../../serverApi/index";
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-    aboutusImage : FileUrl.aboutus,
+    activities: [] as Order[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad() {
-
+    const openId = wx.getStorageSync('openId')
+    wx.request({
+      url: ApiUrl.getOrders,
+      method: 'POST',
+      data: {
+        openId,
+      },
+      success: (resp: {
+        statusCode: number,
+        data: GetOrdersResp
+      }) => {
+        if (resp.statusCode == 200) {
+          this.setData({
+            activities: resp.data.data.orders
+          })
+        }
+      }
+    })
   },
 
   /**

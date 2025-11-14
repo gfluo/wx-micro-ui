@@ -1,6 +1,6 @@
 <!--src/pages/aboutus/aboutus.wxml-->
 <!-- <image mode="widthFix" src="../../assets/images/aboutus1.png"></image> -->
-<van-image width="100%" height="14rem" fit="cover" src="/src/assets/images/aboutus.png" />
+<van-image width="100%" height="14rem" fit="cover" lazy-load show-loading src="{{aboutusImage}}" />
 <view class="page">
   <!-- 中文部分 -->
   <view class="container card">

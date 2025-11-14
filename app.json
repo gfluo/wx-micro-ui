@@ -1,25 +1,15 @@
 {
   "usingComponents": {
-    "van-image": "@vant/weapp/image/index",
-    "van-search": "@vant/weapp/search/index",
-    "van-button": "@vant/weapp/button/index"
   },
   "pages": [
     "src/pages/aboutus/aboutus",
     "src/pages/activities/activities",
-    "pages/activityDetail/activityDetail",
-    "pages/logs/logs",
-    "pages/card/card",
-    "pages/me/me",
-    "pages/map/map",
-    "pages/test/test",
-    "pages/myInfo/myInfo",
-    "pages/myauth/myauth",
-    "pages/myintro/myintro",
-    "pages/myactive/myactive",
-    "pages/myfav/myfav",
-    "pages/myjion/myjion",
-    "pages/myadv/myadv"
+    "src/pages/activitydetail/activitydetail",
+    "src/pages/myinfo/myinfo",
+    "src/pages/mydesc/mydesc",
+    "src/pages/myauth/myauth",
+    "src/pages/myintro/myintro",
+    "src/pages/orders/orders"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -47,7 +37,7 @@
         "text": "线下活动"
       },
       {
-        "pagePath": "pages/me/me",
+        "pagePath": "src/pages/myinfo/myinfo",
         "iconPath": "/image/tabbar/center1.png",
         "selectedIconPath": "/image/tabbar/center.png",
         "text": "我的"
