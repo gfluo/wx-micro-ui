@@ -34,6 +34,11 @@
       <text class="right-arrow">></text>
     </view>
 
+    <view class="item" bindtap="clockIn">
+      <text class="left">我的打卡</text>
+      <text class="right-arrow">></text>
+    </view>
+
     <view class="item" bindtap="myauth">
       <text class="left">性格测试</text>
 

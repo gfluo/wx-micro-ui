@@ -26,3 +26,8 @@ typescript@^5.9.3:
   version "5.9.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.9.3.tgz#5b4f59e15310ab17a216f5d6cf53ee476ede670f"
   integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
+
+vant-tree-shaking@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/vant-tree-shaking/-/vant-tree-shaking-1.0.4.tgz#3331da1ec8673db419be3ee8dfdc87b4f46f9d5d"
+  integrity sha512-Ctg1zFXwKR01bePagf183RV4eFffeySJ5IoBhS+cD+7vueYsCa5/xFlZJvhF3pcR0R3x+3TL0zAIKluzUM4uRg==
