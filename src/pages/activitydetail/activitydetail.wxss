@@ -114,13 +114,19 @@
 .stage-name {
   font-size: 28rpx;
   font-weight: 600;
-  color: #1E90FF;
+  color: black;
   margin-bottom: 8rpx;
+}
+
+.stage-desc-link {
+  font-size: 26rpx;
+  color: #5DADE2;
+  line-height: 1.6;
 }
 
 .stage-desc {
   font-size: 26rpx;
-  color: #5DADE2;
+  color: black;
   line-height: 1.6;
 }
 

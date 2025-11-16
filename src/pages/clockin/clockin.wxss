@@ -1,0 +1,40 @@
+/* pages/menu/menu.wxss */
+
+.page {
+  min-height: 100vh;
+  padding: 40rpx;
+  background: #f5f7fa;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32rpx;
+}
+
+.gradient-btn {
+  border: none !important;
+  padding: 32rpx 24rpx !important;
+  height: auto !important;
+  box-shadow: 0 12rpx 30rpx rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 点击缩放动效 */
+.gradient-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 6rpx 15rpx rgba(0, 0, 0, 0.18);
+}
+
+.btn-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #fff;
+}
+
+.btn-desc {
+  font-size: 26rpx;
+  margin-top: 6rpx;
+  opacity: 0.9;
+  color: #fff;
+}

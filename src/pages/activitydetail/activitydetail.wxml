@@ -52,7 +52,7 @@
         <view class="section-title">活动环节</view>
         <block wx:for="{{link}}" wx:key="index">
           <view class="stage-item">
-            <view class="stage-name">{{--index + 1}}、{{item}}</view>
+            <view class="stage-desc-link">{{--index + 1}}、{{item}}</view>
             <!-- <view class="stage-desc">{{item}}</view> -->
           </view>
         </block>

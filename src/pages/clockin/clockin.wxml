@@ -1,0 +1,21 @@
+<!-- pages/menu/menu.wxml -->
+<view class="page">
+
+<view class="btn-list">
+  <van-button
+    wx:for="{{menuList}}"
+    wx:key="index"
+    class="gradient-btn"
+    custom-style="background: linear-gradient(135deg, {{item.color1}}, {{item.color2}});"
+    type="primary"
+    round
+    block
+    data-url="{{ item.url }}"
+    bind:click="goToPage"
+  >
+    <view class="btn-title">{{ item.name }}</view>
+    <view class="btn-desc">{{ item.desc }}</view>
+  </van-button>
+</view>
+
+</view>

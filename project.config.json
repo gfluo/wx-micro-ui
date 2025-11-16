@@ -5,7 +5,9 @@
     "include": []
   },
   "setting": {
-    "useCompilerPlugins": ["typescript"],
+    "useCompilerPlugins": [
+      "typescript"
+    ],
     "urlCheck": false,
     "es6": false,
     "enhance": true,

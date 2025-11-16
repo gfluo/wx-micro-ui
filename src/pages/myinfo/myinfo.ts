@@ -57,18 +57,8 @@ Page({
     })
   },
   clockIn() {
-    wx.navigateToMiniProgram({
-      appId: 'wx855c5d7718f218c9',
-      path: 'pages/main_module/pages/habit_detail_v3/habit_detail_v3',
-      extraData: {
-        byAction: '70099',
-        byCurPage: 'habit_detail_v3',
-        byPage: 'habit_detail_v3',
-      },
-      envVersion: 'release',
-      success(res) {
-        console.log(res);
-      }
+    wx.navigateTo({
+      url: '/src/pages/clockin/clockin'
     })
   },
   orders() {

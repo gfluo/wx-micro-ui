@@ -55,6 +55,7 @@ Page({
           if (apiServerResp.data.errno == 0) {
             this.setData({
               ...apiServerResp.data.data,
+              link: apiServerResp.data.data.link.filter((l) => ( l !== ''))
             });
             this.joinStatusCheck();
           }
