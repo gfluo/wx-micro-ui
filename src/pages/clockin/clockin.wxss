@@ -1,0 +1,42 @@
+.page {
+  min-height: 100vh;
+  padding: 40rpx;
+  background: #f5f7fa;
+}
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40rpx; /* 按钮间距稍微拉大 */
+}
+
+.gradient-btn {
+  border: none !important;
+  padding: 48rpx 24rpx !important; /* 上下内边距加大，让按钮更高 */
+  min-height: 160rpx; /* 保证按钮整体较高 */
+  height: auto !important;
+  box-shadow: 0 12rpx 30rpx rgba(0, 0, 0, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 垂直居中内容 */
+}
+
+/* 点击缩放动效 */
+.gradient-btn:active {
+  transform: scale(0.96);
+  box-shadow: 0 6rpx 15rpx rgba(0, 0, 0, 0.18);
+}
+
+.btn-title {
+  font-size: 40rpx; /* 字体更大 */
+  font-weight: 700;
+  color: #fff;
+}
+
+.btn-desc {
+  font-size: 28rpx;
+  margin-top: 8rpx;
+  opacity: 0.9;
+  color: #fff;
+}

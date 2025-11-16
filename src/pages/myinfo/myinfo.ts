@@ -57,18 +57,8 @@ Page({
     })
   },
   clockIn() {
-    wx.navigateToMiniProgram({
-      appId: 'wx855c5d7718f218c9',
-      path: 'pages/main_module/pages/habit_detail_v3/habit_detail_v3.html?byAction=70099&byUserID=ochvq0OznrmQ96mHkW4ysNCw6hTc&marketChannel=&byUserId=ochvq0OznrmQ96mHkW4ysNCw6hTc&stime=1762406058152&habitID=&habitId=7492272&habitFrom=share&byCurPage=habit_detail_v3&byXdkOpenId=undefined&byPage=habit_detail_v3',
-      extraData: {
-        byAction: '70099',
-        byCurPage: 'habit_detail_v3',
-        byPage: 'habit_detail_v3',
-      },
-      envVersion: 'release',
-      success(res) {
-        console.log(res);
-      }
+    wx.navigateTo({
+      url: '/src/pages/clockin/clockin'
     })
   },
   orders() {

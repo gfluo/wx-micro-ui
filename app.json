@@ -1,15 +1,17 @@
 {
   "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {
+  },
   "pages": [
     "src/pages/aboutus/aboutus",
     "src/pages/activities/activities",
     "src/pages/activitydetail/activitydetail",
-    "pages/activityDetail/activityDetail",
     "src/pages/myinfo/myinfo",
     "src/pages/mydesc/mydesc",
     "src/pages/myauth/myauth",
     "src/pages/myintro/myintro",
-    "src/pages/orders/orders"
+    "src/pages/orders/orders",
+    "src/pages/clockin/clockin"
   ],
   "window": {
     "backgroundTextStyle": "light",
