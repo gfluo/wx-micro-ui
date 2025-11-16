@@ -1,0 +1,131 @@
+<!--src/pages/activitydetail/activitydetail.wxml-->
+<view wx:if="{{loading}}" class="loading-box">
+  <view class="spinner"></view>
+  <text class="loading-text">加载中...</text>
+</view>
+<view class="page-container">
+  <view class="container">
+    <!-- 顶部图片 -->
+    <!-- WXML -->
+    <van-image class="top-image" src="{{cover}}" width="100%" fit="widthFix" show-loading lazy-load></van-image>
+
+
+    <!-- 标题 -->
+    <view class="title">{{title}}</view>
+
+    <!-- 费用 -->
+    <view class="fee">
+      <view wx:if="{{amount > 0}}">
+        <text class="fee-amount">{{amountDescribe}}: ¥{{amount}}</text>
+      </view>
+      <view wx:else class="fee-free">
+        <text>公益活动</text>
+      </view>
+    </view>
+
+    <!-- 活动信息 -->
+    <view class="info">
+      <view class="info-item">
+        <text>开始时间：{{startTime}}</text>
+      </view>
+      <view class="info-item">
+        <text>活动时长：{{period}}</text>
+      </view>
+      <view class="info-item">
+        <text>活动地点：{{address}}</text>
+      </view>
+    </view>
+  </view>
+  <van-divider />
+  <view class="container-desc">
+    <!-- 活动卡片 -->
+    <view class="activity-card">
+      <!-- 活动环节 -->
+      <view class="section">
+        <view class="section-title">活动细节</view>
+        <view class="activity-desc">
+          家好教育家灏"{{title}}",非相亲活动，本活动不保证男女比例，可能全场是男生，也可能都是女生，报名请谨慎。
+        </view>
+        <view class="activity-desc">
+          家好教育家灏各项活动定位不是相亲社群，我们定位健康、开心、幸福。重要事情说三遍！健康、开心、幸福！健康、开心、幸福！健康、开心、幸福！
+        </view>
+        <view class="section-title">活动环节</view>
+        <block wx:for="{{link}}" wx:key="index">
+          <view class="stage-item">
+            <view class="stage-desc-link">{{--index + 1}}、{{item}}</view>
+            <!-- <view class="stage-desc">{{item}}</view> -->
+          </view>
+        </block>
+      </view>
+      <view class="body-describe">
+        <mp-html content="{{describe}}" />
+      </view>
+      <van-divider />
+      <view class="body-culture">
+        <view class="stage-item">
+          <view class="stage-name">海南家好教育科技介绍</view>
+          <view class="stage-desc">
+            家好教育科技是一家聚焦女性终身成长与亲子关系赋能的文化教育机构。我们始终以“高共情赋能、高文化浸润、终身化学习”为核心价值主张，一方面为女性构建自我探索与能力跃升的系统化成长平台，另一方面为家庭搭建亲子共融、双向成长的生态化服务体系，致力于通过文化浸润让每个家庭实现幸福能级的提升与可持续发展。
+          </view>
+          <view class="stage-desc">
+            为匹配不同阶段女性及家庭的核心需求，我们构建了覆盖“启蒙—进阶—深耕”全周期的阶梯式成长社群体系，形成从基础认知到实践落地、再到深度升华的完整学习路径：
+          </view>
+          <view class="stage-name">基础启蒙层·六书酉道社群</view>
+          <view class="stage-desc">作为成长旅程的入门核心载体，社群以传统文化核心载体“六书”（古人造字、识字的根本法则）为教学原点，通过场景化解读与轻量化引导，破译汉字背后的文化基因与生活智慧。该阶段核心价值在于实现“双启蒙”：助力女性在文化溯源中唤醒内在动能，完成自我认知升级；搭建亲子共学场景，让家长与孩子在文化探索中深化情感联结、构建默契互动模式。无论是传统文化刚入门，还是寻求亲子互动优化方案的家庭，均可在此阶段找到精准的成长切入点。</view>
+          <view class="stage-name">能力进阶层·善念小栈社群 </view>
+          <view class="stage-desc">针对完成基础启蒙且实现文化认知初步内化的学员，“善念小栈”以“文化落地”为核心目标，构建深度进阶体系。内容维度实现双重升级：理论层面聚焦经典文本的专题化研学，形成系统化文化认知；实践层面打造多元化落地场景，涵盖中医生活化实践指导、传统武学少儿素养培育、科技与文化融合实践等特色模块。通过“理论+实践+实践”的多轨模式，助力女性明确家庭与自我的双重成长路径，推动亲子关系从“互动和谐”向“互促成长”迭代。</view>
+          <view class="stage-name">深度升华层·星妤小栈研学社群 </view>
+          <view class="stage-desc">作为高阶核心社群，“星妤小栈”聚焦文化传承与家庭成长的深度课题，汇聚同频高阶学员形成高质量交流圈。社群以“系统研学+共创共生”为运营模式，围绕文化传承创新、家庭文化构建等核心议题开展深度研讨，通过认知碰撞与经验共享，突破个体成长瓶颈。该阶段旨在实现价值升华：让女性在文化深耕中彰显自我社会价值与家庭引领力，为家庭注入深厚的文化底蕴与幸福基因。</view>
+          <view class="stage-desc">从“六书酉道”的文化启蒙，到“善念小栈”的实践进阶，再到“星妤小栈”的深度升华，家好教育以全周期陪伴视角，见证每位女性的成长蜕变，护航每个家庭的幸福升级。我们始终坚信：女性成长是家庭幸福的核心驱动力，亲子共融是幸福传递的关键载体。</view>
+          <view class="stage-desc">家好教育，始终以文化为根、以成长为脉、以幸福为果——用专业体系滋养生命成长，用持续陪伴见证家庭蜕变，让每一份成长有迹可循，让每一份幸福触手可及。</view>
+        </view>
+      </view>
+      <van-divider />
+      <view class="body-forbidden">
+        <view class="stage-item">
+          <view class="stage-name">《酉道社群文明公约》3.0 </view>
+          <view class="stage-name">Youdao Community Code of Civility· Version 3.0 </view>
+          <view class="stage-name">—— 给学习的人们的星光剧场，给生意人的避雷指南 </view>
+          <view class="stage-name">我们禁止这些「能量小偷」 </view>
+          <view class="stage-desc">（违者直接踢出+拉黑，不留作业遗憾）</view>
+          <view class="stage-name">「行走的广告牌」退退退</view>
+          <view class="stage-name">「玄学气氛组」结界屏蔽</view>
+          <view class="stage-name">我们酉道学习社群宣言：《论语》比星座准，《了凡四训》比塔罗灵</view>
+          <view class="stage-name">高压线！碰了就「踢群」</view>
+          <view class="stage-name">聊政治/宗教/颜色梗 —— 秒送飞机票</view>
+          <view class="stage-name">单亲妈妈歧视/学历鄙视 —— 直接黑名单</view>
+          <view class="stage-name">温馨提示：</view>
+          <view class="stage-desc">这儿不是人才市场，是妈妈们的充电站</view>
+          <view class="stage-desc">想辩论？建议报名《奇葩说》海选！</view>
+          <view class="stage-desc">我们这儿没有速成鸡汤，只有各路家风掌灯人熬出来的智慧膏方！</view>
+          <view class="stage-name">写给家风掌灯人的金句</view>
+          <view class="stage-name">“这里不渡生意人，只渡精神贵族”</view>
+          <view class="stage-desc">嫌国学太深？嫌读书太烧脑？</view>
+          <view class="stage-name">出门左转刷短视频 ——</view>
+          <view class="stage-desc">我们负责把 <text class="desc-strong">「不想学习」</text> 挡在门外，</view>
+          <view class="stage-desc">把 <text class="desc-strong">「终身成长」</text> 写进基因。</view>
+          <view class="stage-name">家好教务办 严启</view>
+        </view>
+      </view>
+      <view class="body-refund">
+        <view class="stage-item">
+          <view class="stage-name">《酉道社群活动守则》——退款改签</view>
+          <view class="stage-name">一、退款规则</view>
+          <view class="stage-desc"><text class="desc-strong">违约金说明：</text>因个人原因取消报名，收取活动费 <text class="desc-strong">10%</text> 作为资源调度补偿</view>
+          <view class="stage-desc"><text class="desc-strong">注：用于补贴提前准备的教具/食材</text></view>
+          <view class="stage-desc"><text class="desc-strong">活动取消赔偿</text></view>
+          <view class="stage-desc">因我方原因（除地震/疫情等不可抗力）导致活动取消：</view>
+          <view class="stage-desc"><text class="desc-strong">✅ 全额退款 + </text>赠 同等当次<text class="desc-strong">活动优惠劵一张</text>（可叠加使用）</view>
+          <van-image class="" src="/src/assets/images/refund.png" width="100%" fit="widthFix" show-loading lazy-load></van-image>
+          <view class="stage-name">温情提示</view>
+          <view class="stage-name">请像对待约会般重视承诺！</view>
+          <view class="stage-name">谨慎报名，是对彼此最大的尊重！</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="fixed-button-wrap">
+  <button class="fixed-button" bindtap="activityJoin" loading="{{loading}}" disabled="{{ifJoin}}">{{buttonDesc}}</button>
+</view>

@@ -40,7 +40,7 @@
     "disableUseStrict": false,
     "minifyWXML": true,
     "showES6CompileOption": false,
-    "useCompilerPlugins": false
+    "useCompilerPlugins": ["typescript"]
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.0",

@@ -1,0 +1,13 @@
+<view class="intro-container">
+
+<view class="card">
+  <view class="title">自我介绍</view>
+
+  <textarea name="textarea" value="{{intro}}" class="intro-textarea" placeholder="简单写写您自己吧！" placeholder-class="placeholder" maxlength="400" bindinput="onInput"></textarea>
+
+  <view class="counter">{{currentCount}} / 400</view>
+
+  <button form-type="submit" class="submit-btn" bindtap="introSubmit">提交</button>
+</view>
+
+</view>

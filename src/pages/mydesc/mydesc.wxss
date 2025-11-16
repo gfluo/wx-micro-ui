@@ -1,0 +1,126 @@
+/* 整体背景渐变 */
+.edit-page {
+  background: linear-gradient(180deg, #e5f6ff 0%, #f8fcff 50%, #ffffff 100%);
+  min-height: 100vh;
+  padding: 32rpx;
+}
+
+/* 顶部头像 */
+.profile-header {
+  display: flex;
+  justify-content: center;
+  padding: 30rpx 0 50rpx;
+}
+
+.avatar-box {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow:
+    0 12rpx 26rpx rgba(0, 150, 220, 0.12),
+    0 0 0 5rpx rgba(0, 170, 240, 0.25);
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* 表单卡片 */
+.form-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 26rpx;
+  padding: 40rpx 34rpx;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12rpx 32rpx rgba(0, 150, 220, 0.08);
+}
+
+/* 标题 */
+.form-title {
+  font-size: 34rpx;
+  font-weight: 600;
+  color: #0c3c66;
+  margin-bottom: 36rpx;
+}
+
+/* 表单项 */
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 22rpx;
+  margin-bottom: 34rpx;
+  border-bottom: 1px solid rgba(180, 220, 245, 0.45);
+}
+
+.label {
+  width: 180rpx;
+  font-size: 30rpx;
+  color: #0c557a;
+}
+
+.input {
+  flex: 1;
+  font-size: 30rpx;
+  padding: 10rpx 0;
+  color: #2a5168;
+}
+
+.picker {
+  flex: 1;
+  font-size: 30rpx;
+  color: #2a5168;
+}
+
+/* 按钮区 */
+.btn-area {
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+}
+
+/* 玻璃按钮 */
+.submit-btn-glass {
+  min-width: 260rpx;
+  height: 78rpx;
+  border-radius: 50rpx;
+  padding: 0 40rpx;
+
+  font-size: 30rpx;
+  color: #0d3b66;
+
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(14px);
+
+  border: 2rpx solid rgba(30, 150, 210, 0.35);
+
+  box-shadow:
+    0 6rpx 16rpx rgba(0, 140, 200, 0.12),
+    0 0 0 3rpx rgba(0, 150, 220, 0.15);
+
+  line-height: 78rpx;
+}
+
+.submit-btn-glass:active {
+  background: rgba(255, 255, 255, 0.42);
+  border-color: rgba(20, 130, 200, 0.55);
+}
+.center-picker-box {
+  width: 600rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  background: #ffffff;
+}
+.picker-title {
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 500;
+  padding: 24rpx 0;
+  color: #0d3b66;
+  border-bottom: 1px solid #eef4f8;
+}
+

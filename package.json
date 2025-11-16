@@ -2,7 +2,10 @@
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {
-    "mp-html": "^2.2.1"
+    "@types/wechat-miniprogram": "^3.4.8",
+    "@vant/weapp": "^1.11.7",
+    "mp-html": "^2.2.1",
+    "typescript": "^5.9.3"
   },
   "name": "wx-micro-ui",
   "description": "",

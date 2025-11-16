@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "types": ["@types/wechat-miniprogram"],
+    "outDir": "miniprogram",
+    "paths": {
+      "@vant/weapp/*": ["./node_modules/@vant/weapp/dist/*"]
+    },
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}

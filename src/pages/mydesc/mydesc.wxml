@@ -1,0 +1,75 @@
+<van-notify id="van-notify" />
+<view class="edit-page">
+
+  <!-- 顶部头像区域 -->
+  <view class="profile-header">
+    <view class="avatar-box">
+      <open-data type="userAvatarUrl" class="avatar"></open-data>
+    </view>
+  </view>
+
+  <form bindsubmit="submitDesc">
+    <view class="form-card">
+      <view class="form-title">编辑个人资料</view>
+      <!-- 昵称 -->
+      <view class="form-item">
+        <text class="label">昵称</text>
+        <input value="{{username}}" name="username" class="input" placeholder="请输入昵称" />
+      </view>
+
+      <!-- 性别：使用 vant-picker -->
+      <view class="form-item" bindtap="openSexPicker">
+        <text class="label">性别</text>
+        <view class="picker">{{sex || '请选择'}}</view>
+      </view>
+      <!-- 性别选择器：居中弹窗 -->
+      <van-popup show="{{showSexPicker}}" round close-on-click-overlay bind:close="closeSexPicker" custom-style="padding: 0; border-radius: 24rpx; background: #fff;">
+        <view class="center-picker-box">
+          <view class="picker-title">请选择性别</view>
+          <van-picker columns="{{sexOptions}}" show-toolbar bind:confirm="onSexConfirm" bind:cancel="closeSexPicker" />
+        </view>
+      </van-popup>
+
+
+      <!-- 生日：使用 van-calendar -->
+      <view class="form-item" bindtap="openCalendar">
+        <text class="label">生日</text>
+        <view class="picker">{{birthday || '请选择日期'}}</view>
+      </view>
+
+      <!-- 职业 -->
+      <view class="form-item">
+        <text class="label">职业</text>
+        <input value="{{occupation}}" name="occupation" class="input" placeholder="选填" />
+      </view>
+
+      <!-- 联系电话 -->
+      <view class="form-item">
+        <text class="label">联系电话</text>
+        <input value="{{mobile}}" name="mobile" type="number" class="input" placeholder="必填" />
+      </view>
+
+      <!-- 地址 -->
+      <view class="form-item">
+        <text class="label">联系地址</text>
+        <input value="{{address}}" name="address" class="input" placeholder="选填" />
+      </view>
+
+      <!-- 兴趣 -->
+      <view class="form-item">
+        <text class="label">兴趣爱好</text>
+        <input value="{{interest}}" name="interest" class="input" placeholder="选填" />
+      </view>
+
+    </view>
+
+    <!-- 提交按钮 -->
+    <view class="btn-area">
+      <button form-type="submit" class="submit-btn-glass">提交</button>
+    </view>
+  </form>
+  <van-popup show="{{showCalendar}}" position="bottom" >
+    <van-datetime-picker type="date" value="{{currentDate}}" bind:input="onBirthdayChange" min-date="{{ minDate }}" bind:cancel="closeCalendar" bind:confirm="onBirthdayConfirm"/>
+  </van-popup>
+
+</view>

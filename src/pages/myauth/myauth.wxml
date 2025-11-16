@@ -1,0 +1,8 @@
+<!--src/pages/myauth/myauth.wxml-->
+<!--pages/myauth/myauth.wxml-->
+<view class="auth-container">
+  <view class="glass-card">
+    <text class="title">功能仍在完善中</text>
+    <text class="sub">敬请期待...</text>
+  </view>
+</view>

@@ -1,20 +1,15 @@
 {
+  "lazyCodeLoading": "requiredComponents",
   "pages": [
-    "pages/activities/activities",
+    "src/pages/aboutus/aboutus",
+    "src/pages/activities/activities",
+    "src/pages/activitydetail/activitydetail",
     "pages/activityDetail/activityDetail",
-    "pages/logs/logs",
-    "pages/about/about",
-    "pages/card/card",
-    "pages/me/me",
-    "pages/map/map",
-    "pages/test/test",
-    "pages/myInfo/myInfo",
-    "pages/myauth/myauth",
-    "pages/myIntro/myIntro",
-    "pages/myactive/myactive",
-    "pages/myfav/myfav",
-    "pages/myjion/myjion",
-    "pages/myadv/myadv"
+    "src/pages/myinfo/myinfo",
+    "src/pages/mydesc/mydesc",
+    "src/pages/myauth/myauth",
+    "src/pages/myintro/myintro",
+    "src/pages/orders/orders"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -22,7 +17,6 @@
     "navigationBarTitleText": "家好教育",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "color": "#666",
@@ -31,19 +25,19 @@
     "borderStyle": "black",
     "list": [
       {
-        "pagePath": "pages/about/about",
+        "pagePath": "src/pages/aboutus/aboutus",
         "iconPath": "/image/tabbar/type1.png",
         "selectedIconPath": "/image/tabbar/type.png",
         "text": "关于我们"
       },
       {
-        "pagePath": "pages/activities/activities",
+        "pagePath": "src/pages/activities/activities",
         "iconPath": "/image/tabbar/index1.png",
         "selectedIconPath": "/image/tabbar/index.png",
         "text": "线下活动"
       },
       {
-        "pagePath": "pages/me/me",
+        "pagePath": "src/pages/myinfo/myinfo",
         "iconPath": "/image/tabbar/center1.png",
         "selectedIconPath": "/image/tabbar/center.png",
         "text": "我的"

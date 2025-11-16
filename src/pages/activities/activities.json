@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "线下活动",
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  },
+  "enablePullDownRefresh": true
+}
