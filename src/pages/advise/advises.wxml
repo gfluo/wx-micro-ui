@@ -1,0 +1,13 @@
+<view class="intro-container">
+
+<view class="card">
+  <view class="title">分享公益</view>
+
+  <textarea name="textarea" value="{{advise}}" class="intro-textarea" placeholder="提交您想分享的公益，我们来帮助您！" placeholder-class="placeholder" maxlength="400" bindinput="onInput"></textarea>
+
+  <view class="counter">{{currentCount}} / 400</view>
+
+  <button form-type="submit" class="submit-btn" bindtap="introSubmit">提交</button>
+</view>
+
+</view>

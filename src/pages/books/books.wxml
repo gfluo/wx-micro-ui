@@ -1,0 +1,26 @@
+<view class="page">
+
+<view class="top-area">
+  <view class="header">书籍列表</view>
+
+  <view class="input-area">
+    <input placeholder="请输入书名" value="{{newBook}}" bindinput="onInput" />
+    <button bindtap="addBook">添加</button>
+  </view>
+</view>
+
+<view class="list">
+  <block wx:for="{{books}}" wx:key="*this">
+    <view class="book-row">
+
+      <view class="book-item">{{item}}</view>
+
+      <view class="delete-btn" bindtap="removeBook" data-index="{{index}}">
+        ✕
+      </view>
+
+    </view>
+  </block>
+</view>
+
+</view>

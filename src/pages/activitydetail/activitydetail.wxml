@@ -41,7 +41,7 @@
     <!-- 活动卡片 -->
     <view class="activity-card">
       <!-- 活动环节 -->
-      <view class="section">
+      <!-- <view class="section">
         <view class="section-title">活动细节</view>
         <view class="activity-desc">
           知时节家灏"{{title}}",非相亲活动，本活动不保证男女比例，可能全场是男生，也可能都是女生，报名请谨慎。
@@ -53,15 +53,16 @@
         <block wx:for="{{link}}" wx:key="index">
           <view class="stage-item">
             <view class="stage-desc-link">{{--index + 1}}、{{item}}</view>
-            <!-- <view class="stage-desc">{{item}}</view> -->
           </view>
         </block>
-      </view>
+      </view> -->
       <view class="body-describe">
+        <view class="section-title-body">活动内容概述</view>
         <mp-html content="{{describe}}" />
       </view>
       <van-divider />
       <view class="body-culture">
+        <view class="section-title-body">社群介绍</view>
         <view class="stage-item">
           <view class="stage-name">知识节文化</view>
           <view class="stage-desc">知时节是一家面向未来的文化创新机构，是一个让孩子在体验中感受文化根脉的地方。
@@ -104,6 +105,7 @@
       </view>
       <van-divider />
       <view class="body-forbidden">
+        <view class="section-title-body">社群规定</view>
         <view class="stage-item">
           <view class="stage-name">《酉道社群文明公约》3.0 </view>
           <view class="stage-name">Youdao Community Code of Civility· Version 3.0 </view>
@@ -128,6 +130,7 @@
         </view>
       </view>
       <view class="body-refund">
+        <view class="section-title-body">社群温馨小提示</view>
         <view class="stage-item">
           <view class="stage-name">《酉道社群活动守则》——退款改签</view>
           <view class="stage-name">Youdao Community Event Policy — Refunds & Rescheduling</view>

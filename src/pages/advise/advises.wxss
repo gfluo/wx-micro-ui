@@ -1,0 +1,96 @@
+/* —— 背景：青蓝色柔光渐变 —— */
+.intro-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  background: linear-gradient(145deg, #e8f6ff 0%, #d2ecff 40%, #bfe3ff 100%);
+}
+
+/* —— 毛玻璃青蓝卡片 —— */
+.card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 26rpx;
+  padding: 42rpx 36rpx;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8rpx 32rpx rgba(0, 100, 180, 0.08);
+  border: 1rpx solid rgba(255, 255, 255, 0.4);
+}
+
+/* 标题 */
+.title {
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #005c99;
+  margin-bottom: 26rpx;
+}
+
+/* —— 青蓝输入框 —— */
+.intro-textarea {
+  width: 100%;
+  min-height: 20rem;
+  padding: 24rpx;
+  border-radius: 22rpx;
+
+  background: rgba(255, 255, 255, 0.85);
+  border: 1rpx solid #c7e6ff;
+
+  font-size: 30rpx;
+  color: #064A70;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+.placeholder {
+  color: #8cb3cc !important;
+}
+
+/* 字数 */
+.counter {
+  text-align: right;
+  font-size: 24rpx;
+  color: #5b8fa8;
+  margin-top: 12rpx;
+}
+
+
+/* —— 透明毛玻璃青蓝按钮 —— */
+.submit-btn {
+  width: 60%;             /* 小巧的精致按钮 */
+  margin: 40rpx auto 0;
+  padding: 18rpx 0;
+
+  background: rgba(255, 255, 255, 0.18);  /* 半透明玻璃感 */
+  backdrop-filter: blur(14px);            /* 毛玻璃核心 */
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 50rpx;
+  border: 1rpx solid rgba(0, 130, 230, 0.45); /* 青蓝色的细边线，氛围高级 */
+
+  color: #036a9e;        /* 青蓝字体 */
+  font-size: 28rpx;
+  font-weight: 500;
+  letter-spacing: 2rpx;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 轻柔阴影（冷色调） */
+  box-shadow: 0 6rpx 22rpx rgba(0, 120, 200, 0.15);
+
+  transition: all .23s ease;
+}
+
+/* 点击态 */
+.submit-btn:active {
+  transform: scale(0.97);
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(0, 130, 230, 0.6);
+}
+

@@ -85,6 +85,16 @@
   text-align: left;
 }
 
+.section-title-body {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:black;
+  margin-bottom: 20rpx;
+  border-left: 0rpx solid;
+  padding-left: 16rpx;
+  text-align: center;
+}
+
 .detail-row {
   display: flex;
   margin-bottom: 12rpx;
@@ -109,6 +119,16 @@
   padding: 24rpx;
   margin-bottom: 20rpx;
   border-left: 6rpx solid #1E90FF;
+}
+
+.section-title {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #1E90FF;
+  margin-bottom: 20rpx;
+  border-left: 6rpx solid #87CEFA;
+  padding-left: 16rpx;
+  text-align: left;
 }
 
 .stage-name {

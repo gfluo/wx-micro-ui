@@ -14,7 +14,7 @@
     bind:click="goToPage"
   >
     <view class="btn-title">{{ item.name }}</view>
-    <view class="btn-desc">{{ item.desc }}</view>
+    <!-- <view class="btn-desc">{{ item.desc }}</view> -->
   </van-button>
 </view>
 

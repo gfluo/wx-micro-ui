@@ -221,7 +221,7 @@ Page({
    */
   onShareAppMessage() {
     return {
-      path: '/src/pages/activitydetail/activitydetail' + this.data.id
+      path: '/src/pages/activitydetail/activitydetail?id=' + this.data.id
     }
   },
   onShareTimeline() {
