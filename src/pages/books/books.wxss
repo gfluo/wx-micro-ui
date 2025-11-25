@@ -1,0 +1,71 @@
+/* 背景使用柔和木纹图案 */
+.page {
+  padding: 40rpx;
+  min-height: 100vh;
+  background: linear-gradient(
+    160deg,
+    #f7f5f2 0%,
+    #f2f1ee 45%,
+    #eeeae7 100%
+  );
+}
+
+/* 顶部文字 */
+.header {
+  font-size: 42rpx;
+  font-weight: 600;
+  margin-bottom: 30rpx;
+  color: #4b3d33;
+}
+
+/* 输入区 */
+.input-area {
+  display: flex;
+  gap: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+input {
+  flex: 1;
+  padding: 22rpx;
+  background: #ffffffd8;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 14rpx rgba(0, 0, 0, 0.05);
+}
+
+button {
+  padding: 0 36rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 14rpx rgba(0, 0, 0, 0.2);
+}
+
+/* 列表 */
+.book-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25rpx;
+}
+
+.book-item {
+  flex: 1;
+  padding: 26rpx;
+  border-radius: 16rpx;
+  background-size: 500rpx auto;
+  font-size: 32rpx;
+  color: #4b3d33;
+  box-shadow: 0 6rpx 18rpx rgba(0, 0, 0, 0.08);
+}
+
+/* 删除按钮 */
+.delete-btn {
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  background: #dcdcdc;
+  color: #666;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  box-shadow: 0 4rpx 10rpx rgba(0, 0, 0, 0.08);
+}

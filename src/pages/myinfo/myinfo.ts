@@ -51,6 +51,16 @@ Page({
       url: '/src/pages/myauth/myauth'
     })
   },
+  mybook() {
+    wx.navigateTo({
+      url: '/src/pages/books/books'
+    })
+  },
+  myadvise() {
+    wx.navigateTo({
+      url: '/src/pages/advise/advises'
+    })
+  },
   myintro() {
     wx.navigateTo({
       url: '/src/pages/myintro/myintro'

@@ -85,6 +85,16 @@
   text-align: left;
 }
 
+.section-title-body {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color:black;
+  margin-bottom: 20rpx;
+  border-left: 0rpx solid;
+  padding-left: 16rpx;
+  text-align: center;
+}
+
 .detail-row {
   display: flex;
   margin-bottom: 12rpx;

@@ -10,6 +10,8 @@ export const ApiUrl = {
   register: `${BASE_URL}/api/register`,
   saveIntro: `${BASE_URL}/api/user/intro/save`,
   getOrders: `${BASE_URL}/api/activity/orders`,
+  saveBooks: `${BASE_URL}/api/user/books/save`,
+  createAdivse: `${BASE_URL}/api/user/advise/create`,
 }
 
 export const FileUrl = {
@@ -56,6 +58,7 @@ export interface SignInResp {
       username: string,
       birthday: string,
       intro: string,
+      books: string | null,
     }
   }
 }
@@ -65,6 +68,20 @@ export interface ActivityJoinStatusResp {
   error: string,
   data: {
     ifJoin: boolean
+  }
+}
+
+export interface SaveBooksResp {
+  errno: number,
+  error: string,
+  data: {
+  }
+}
+
+export interface CreateAdviseResp {
+  errno: number,
+  error: string,
+  data: {
   }
 }
 

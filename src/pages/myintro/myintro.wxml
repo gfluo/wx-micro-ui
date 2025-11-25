@@ -1,9 +1,9 @@
 <view class="intro-container">
 
 <view class="card">
-  <view class="title">自我介绍</view>
+  <view class="title">读书话题</view>
 
-  <textarea name="textarea" value="{{intro}}" class="intro-textarea" placeholder="简单写写您自己吧！" placeholder-class="placeholder" maxlength="400" bindinput="onInput"></textarea>
+  <textarea name="textarea" value="{{intro}}" class="intro-textarea" placeholder="说出您的话题！" placeholder-class="placeholder" maxlength="400" bindinput="onInput"></textarea>
 
   <view class="counter">{{currentCount}} / 400</view>
 

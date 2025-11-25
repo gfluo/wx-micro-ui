@@ -41,7 +41,7 @@
     <!-- 活动卡片 -->
     <view class="activity-card">
       <!-- 活动环节 -->
-      <view class="section">
+      <!-- <view class="section">
         <view class="section-title">活动细节</view>
         <view class="activity-desc">
           家好教育家灏"{{title}}",非相亲活动，本活动不保证男女比例，可能全场是男生，也可能都是女生，报名请谨慎。
@@ -53,15 +53,16 @@
         <block wx:for="{{link}}" wx:key="index">
           <view class="stage-item">
             <view class="stage-desc-link">{{--index + 1}}、{{item}}</view>
-            <!-- <view class="stage-desc">{{item}}</view> -->
           </view>
         </block>
-      </view>
+      </view> -->
       <view class="body-describe">
+        <view class="section-title-body">活动内容概述</view>
         <mp-html content="{{describe}}" />
       </view>
       <van-divider />
       <view class="body-culture">
+        <view class="section-title-body">社群介绍</view>
         <view class="stage-item">
           <view class="stage-name">海南家好教育科技介绍</view>
           <view class="stage-desc">
@@ -82,6 +83,7 @@
       </view>
       <van-divider />
       <view class="body-forbidden">
+        <view class="section-title-body">社群规定</view>
         <view class="stage-item">
           <view class="stage-name">《酉道社群文明公约》3.0 </view>
           <view class="stage-name">Youdao Community Code of Civility· Version 3.0 </view>
@@ -108,6 +110,7 @@
         </view>
       </view>
       <view class="body-refund">
+        <view class="section-title-body">社群温馨小提示</view>
         <view class="stage-item">
           <view class="stage-name">《酉道社群活动守则》——退款改签</view>
           <view class="stage-name">一、退款规则</view>

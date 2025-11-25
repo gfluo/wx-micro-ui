@@ -20,17 +20,17 @@
 <!-- 个人资料区域 -->
 <view class="group">
   <view class="item" bindtap="mydesc">
-    <text class="left">我的资料</text>
+    <text class="left">注册信息</text>
     <text class="right-arrow">></text>
   </view>
 
-  <view class="item" bindtap="myauth">
-    <text class="left">我的认证</text>
+  <view class="item" bindtap="mybook">
+    <text class="left">我想听的书</text>
     <text class="right-arrow">></text>
   </view>
 
   <view class="item" bindtap="myintro">
-    <text class="left">自我介绍</text>
+    <text class="left">你想聊的读书话题</text>
     <text class="right-arrow">></text>
   </view>
 
@@ -54,7 +54,7 @@
 <!-- 功能类 -->
 <view class="group">
   <view class="item" bindtap="orders">
-    <text class="left">我参加的活动</text>
+    <text class="left">我的活动订单</text>
     <text class="right-arrow">></text>
   </view>
 
@@ -63,8 +63,8 @@
     <text class="right-arrow">></text>
   </view>
 
-  <view class="item" bindtap="myauth">
-    <text class="left">投诉建议</text>
+  <view class="item" bindtap="myadvise">
+    <text class="left">报名公益分享</text>
     <text class="right-arrow">></text>
   </view>
 </view>

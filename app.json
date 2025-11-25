@@ -11,7 +11,9 @@
     "src/pages/myauth/myauth",
     "src/pages/myintro/myintro",
     "src/pages/orders/orders",
-    "src/pages/clockin/clockin"
+    "src/pages/clockin/clockin",
+    "src/pages/books/books",
+    "src/pages/advise/advises"
   ],
   "window": {
     "backgroundTextStyle": "light",
