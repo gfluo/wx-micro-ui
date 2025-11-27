@@ -39,11 +39,13 @@ Page({
               duration: 2000,
             })
           } else {
-            wx.showToast({
-              title: resp.data.error,
-              icon: "error",
-              duration: 2000,
-            })
+            if (resp.data.errno === -21) {
+              wx.showToast({
+                title: resp.data.error,
+                icon: "error",
+                duration: 2000,
+              })
+            }
           }
         }
       }

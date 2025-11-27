@@ -54,7 +54,7 @@
   <!-- 功能类 -->
   <view class="group">
     <view class="item" bindtap="orders">
-      <text class="left">我期待参加的社群活动</text>
+      <text class="left">我的活动订单</text>
       <text class="right-arrow">></text>
     </view>
 

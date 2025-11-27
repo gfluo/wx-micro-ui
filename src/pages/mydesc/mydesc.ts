@@ -132,7 +132,7 @@ Page({
               currentDate: new Date(resp.data.data.user.birthday).getTime(),
             })
           } else {
-            console.log(resp.data.error)
+            // console.log(resp.data.error)
           }
         }
       }
