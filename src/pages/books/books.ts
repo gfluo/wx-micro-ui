@@ -32,11 +32,13 @@ Page({
         if (resp.statusCode === 200) {
           if (resp.data.errno === 0) { //已经获取用户信息
           } else {
-            wx.showToast({
-              title: '保存失败',
-              icon: 'error', // 可选：'success' / 'error' / 'loading' / 'none'
-              duration: 2000,  // 显示时长（ms）
-            })
+            if (resp.data.errno === -4) {
+              wx.showToast({
+                title: '请先填写注册信息',
+                icon: 'error', // 可选：'success' / 'error' / 'loading' / 'none'
+                duration: 2000,  // 显示时长（ms）
+              })
+            }
           }
         }
       }
@@ -85,11 +87,11 @@ Page({
               books: books ? books.split(',') : [],
             })
           } else {
-            wx.showToast({
-              title: '获取失败',
-              icon: 'error', // 可选：'success' / 'error' / 'loading' / 'none'
-              duration: 2000,  // 显示时长（ms）
-            })
+            // wx.showToast({
+            //   title: '获取失败',
+            //   icon: 'error', // 可选：'success' / 'error' / 'loading' / 'none'
+            //   duration: 2000,  // 显示时长（ms）
+            // })
           }
         }
       }

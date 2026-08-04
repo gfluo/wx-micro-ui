@@ -29,11 +29,11 @@ Page({
               userName: resp.data.data.user.username,
             })
           } else {
-            wx.showToast({
-              title: '获取失败',
-              icon: 'error', // 可选：'success' / 'error' / 'loading' / 'none'
-              duration: 2000,  // 显示时长（ms）
-            })
+            // wx.showToast({
+            //   title: '获取失败',
+            //   icon: 'error', // 可选：'success' / 'error' / 'loading' / 'none'
+            //   duration: 2000,  // 显示时长（ms）
+            // })
           }
         }
       }
