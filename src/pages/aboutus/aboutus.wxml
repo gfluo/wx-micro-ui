@@ -1,32 +1,82 @@
-<!--src/pages/aboutus/aboutus.wxml-->
-<!-- <image mode="widthFix" src="../../assets/images/aboutus1.png"></image> -->
-<van-image width="100%" height="14rem" fit="cover" lazy-load show-loading src="{{aboutusImage}}" />
-<view class="page">
-  <!-- 中文部分 -->
-  <view class="container card">
-    <view class="header">
-      <text class="title">家好教育：心语点亮心灯，共筑幸福家园</text>
+<!-- src/pages/aboutus/aboutus.wxml -->
+<view class="about-page">
+  <view class="hero">
+    <van-image width="100%" height="100%" fit="cover" lazy-load show-loading src="{{aboutusImage}}" />
+    <view class="hero-mask"></view>
+    <view class="hero-content">
+      <text class="hero-kicker">JIA HAO EDUCATION</text>
+      <text class="hero-title">家好教育科技</text>
+      <view class="hero-line"></view>
+      <text class="hero-slogan">以数字档案为针，以文化信仰为线</text>
+    </view>
+  </view>
+
+  <view class="page-content">
+    <view class="lead-card">
+      <text class="lead-text">为个人留成长印记，为家族修传世家史，为时代典藏精神底稿。</text>
     </view>
 
-    <view>
-      <text class="paragraph" decode="true">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家好教育，怀揣对中华家道的赤诚与深情，始终相信血脉里藏着最温暖的生命力量。我们以真心传递尊老爱幼的孝悌真意，以温情培育夫妻同心的和睦之韵，以善意播撒大家互助的仁爱种子——在这里，每一位女性都能亲手解锁属于自己的幸福密码，让生活绽放本真的光彩。
-      </text><text class="paragraph" decode="true">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;曾几何时“背景”与“人脉”似乎成了人生的既定轨迹；而如今时代的光芒照亮了新的航向：“知识”与“独立”才是昂首立世的坚实根基。以文化为翼、以勇气为帆，在时代浪潮中书写属于自己的璀璨篇章。每位女性都能在柴米油盐里守护家里灯火的温暖，也能在知识殿堂中奔赴星辰大海的辽阔，于平凡日常中活出不凡的模样。
-      </text><text class="paragraph" decode="true">
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一场从“外求”到“内修”的生命觉醒，更是一个才华可抵岁月、传统可焕新生的美好时代——当初心遇见舞台，当传承拥抱创新，每个平凡的生命都能迎来破茧成蝶的华丽蜕变。家好教育愿做您成长路上那盏温暖而坚定的灯，用心陪伴每一位女性：在千年家道的智慧滋养中，重拾内心的笃定力量；在每一次自我超越里，看见生命蕴藏的无限光芒。往后余生，愿我们一同以爱为基、以智为翼，共赴一场温柔而有力量的成长之约。家好--国好--天下好！
-      </text><text class="paragraph">
-        读经典，沃心苗，丰盈人生路自遥；
-      </text><text class="paragraph">
-        承国学，续薪燎，护航垂髫助茁壮；
-      </text><text class="paragraph">
-        诉心语，燃心灯，照见归乡途不遥；
-      </text><text class="paragraph">
-        传家道，融温情，共筑幸福世泽长。
-      </text>
-      <!-- <view class="footer">
-        <text class="footer-text">家好教育，见天地，怀家国</text>
-      </view> -->
+    <view class="content-card">
+      <view class="content-section first-section">
+        <view class="section-heading">
+          <view class="heading-mark"></view>
+          <text class="section-title">关于我们</text>
+        </view>
+        <text class="paragraph">深耕数字记忆领域的文化教育科技企业。鲜活的家庭故事，是国家叙事的生动起点。我们以标准化数字档案为载体，串联个体成长、家族文脉、家国情怀，收录个人经历、家风与红色记忆，留存有温度的时代人文记录。</text>
+      </view>
+
+      <view class="content-section">
+        <view class="section-heading">
+          <view class="heading-mark"></view>
+          <text class="section-title">全生命周期精神建档</text>
+        </view>
+        <text class="section-summary">记录成长，守护记忆，传承精神</text>
+
+        <view class="service-item">
+          <view class="service-index">01</view>
+          <view class="service-body">
+            <text class="service-title">公共记忆 · 红色政务档案</text>
+            <text class="service-text">提供档案数字化、智能档案库房一体化建设，长效保护红色史料与非遗记忆，落地常态化红色党史教育。</text>
+          </view>
+        </view>
+
+        <view class="service-item">
+          <view class="service-index">02</view>
+          <view class="service-body">
+            <text class="service-title">全球胜任力 · 青少年成长档案</text>
+            <text class="service-text">服务海内外青少年，归集德育、科创、竞赛、访学、实训数据，生成可视化成长档案，合规可溯源，作为升学、科研、深造等权威佐证。</text>
+          </view>
+        </view>
+
+        <view class="service-item last-service">
+          <view class="service-index">03</view>
+          <view class="service-body">
+            <text class="service-title">文脉传家 · 女性专属家风研学</text>
+            <text class="service-text">亲子共学“嘉谦若竹”项目，聚焦家族女性学习力量，融合家风修习与非遗、博物馆讲解员、策展、研学指导师、红色讲解员等培训；通过口述史采集、家族档案编撰，助力女性自我成长，留存可世代传承的家族精神图谱。</text>
+          </view>
+        </view>
+      </view>
+
+      <view class="content-section">
+        <view class="section-heading">
+          <view class="heading-mark"></view>
+          <text class="section-title">家好书香 · 寻味在地中国</text>
+        </view>
+        <text class="paragraph">“家好书香”融合海南地理人文、陕西古法中医、甘肃薰衣草、苦水玫瑰等在地特色，重塑古法文创。让圣贤智慧融入日常生活。</text>
+        <view class="process-row">
+          <text class="process-item">采</text><text class="process-arrow">—</text>
+          <text class="process-item">存</text><text class="process-arrow">—</text>
+          <text class="process-item">展</text><text class="process-arrow">—</text>
+          <text class="process-item">教</text><text class="process-arrow">—</text>
+          <text class="process-item">传</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="tech-card">
+      <text class="tech-label">TECHNOLOGY</text>
+      <text class="tech-title">科技底层硬核支撑</text>
+      <text class="tech-text">自研档案全链路数字化系统，全流程执行国家档案局行业标准：GB/T 18894-2016《电子文件归档与电子档案管理规范》、DA/T 31-2017《纸质档案数字化规范》、DA/T 68-2020《档案服务外包工作规范》，保障档案合规、安全、全程可溯源。搭载VR虚拟展厅、大数据可视化引擎，把纸质档案转化为可交互、可传承的长效数字资产。</text>
     </view>
   </view>
 </view>
