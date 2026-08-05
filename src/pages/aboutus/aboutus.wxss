@@ -1,81 +1,352 @@
-.page {
-  background-color: #f7f7f7;
+/* src/pages/aboutus/aboutus.wxss */
+page {
+  background: #f2f5ef;
+}
+
+.about-page {
   min-height: 100vh;
-  padding: 24rpx 0;
+  color: #27342c;
 }
 
-.container {
-  margin: 30rpx;
+.hero {
+  position: relative;
+  height: 440rpx;
+  overflow: hidden;
 }
 
-.card {
-  background-color: #ffffff;
-  border-radius: 16rpx;
-  box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.05);
-  padding: 40rpx 32rpx;
+.hero-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(18, 40, 28, 0.08) 0%, rgba(18, 40, 28, 0.78) 100%);
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 24rpx;
+.hero-content {
+  position: absolute;
+  right: 48rpx;
+  bottom: 62rpx;
+  left: 48rpx;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
 }
 
-.title {
-  font-size: 36rpx;
+.hero-kicker {
+  margin-bottom: 10rpx;
+  font-size: 20rpx;
+  letter-spacing: 6rpx;
+  opacity: 0.72;
+}
+
+.hero-title {
+  font-size: 52rpx;
+  font-weight: 700;
+  letter-spacing: 8rpx;
+}
+
+.hero-brand {
+  margin-top: 18rpx;
+  padding-left: 2rpx;
+  font-size: 28rpx;
   font-weight: 600;
-  color: #111;
+  letter-spacing: 5rpx;
+  opacity: 0.92;
+}
+
+.page-content {
+  padding: 0 28rpx 64rpx;
+}
+
+.intro-card,
+.content-card {
+  box-sizing: border-box;
+  border: 1rpx solid rgba(72, 103, 82, 0.1);
+  background: #fff;
+  box-shadow: 0 12rpx 36rpx rgba(48, 72, 55, 0.08);
+}
+
+.intro-card {
+  position: relative;
+  z-index: 2;
+  margin-top: -34rpx;
+  padding: 38rpx 38rpx 34rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+  text-align: center;
+}
+
+.quote-mark {
+  position: absolute;
+  top: -26rpx;
+  left: 18rpx;
+  color: #dce8dc;
+  font-family: Georgia, serif;
+  font-size: 120rpx;
+  line-height: 1;
+}
+
+.intro-cn,
+.intro-en {
+  display: block;
+  position: relative;
+}
+
+.intro-cn {
+  color: #42604b;
+  font-size: 29rpx;
+  font-weight: 600;
+  line-height: 1.8;
   letter-spacing: 1rpx;
+}
+
+.intro-en {
+  margin-top: 16rpx;
+  color: #819086;
+  font-size: 23rpx;
+  line-height: 1.65;
+}
+
+.content-card {
+  margin-top: 28rpx;
+  padding: 0 36rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+}
+
+.section {
+  padding: 44rpx 0;
+  border-top: 1rpx solid #e8eee7;
+}
+
+.first-section {
+  border-top: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 28rpx;
+}
+
+.heading-texts {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.heading-line {
+  width: 8rpx;
+  height: 34rpx;
+  margin-right: 16rpx;
+  border-radius: 8rpx;
+  background: #63866d;
+}
+
+.section-title {
+  color: #25362c;
+  font-size: 34rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.section-title-en {
+  display: block;
+  margin-top: 7rpx;
+  color: #99aa9d;
+  font-size: 19rpx;
+  letter-spacing: 3rpx;
+}
+
+.meaning-item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20rpx;
+  padding: 24rpx;
+  border-radius: 14rpx;
+  background: #f5f8f3;
+}
+
+.meaning-key {
+  flex-shrink: 0;
+  min-width: 74rpx;
+  margin-right: 20rpx;
+  color: #52735d;
+  font-size: 30rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.meaning-text {
+  flex: 1;
+  color: #5c675f;
+  font-size: 27rpx;
+  line-height: 1.85;
+  text-align: justify;
+}
+
+.brand-grid {
+  margin-top: 28rpx;
+  overflow: hidden;
+  border: 1rpx solid #dfe9df;
+  border-radius: 16rpx;
+  background: #fbfcfa;
+}
+
+.brand-item {
+  padding: 28rpx 26rpx;
+  border-top: 1rpx solid #e5ece5;
+}
+
+.brand-item:first-child {
+  border-top: 0;
+}
+
+.brand-key,
+.brand-desc {
+  display: block;
+}
+
+.brand-key {
+  margin-bottom: 10rpx;
+  color: #4e705a;
+  font-size: 29rpx;
+  font-weight: 700;
+  letter-spacing: 3rpx;
+}
+
+.brand-desc {
+  color: #748078;
+  font-size: 24rpx;
+  line-height: 1.7;
+}
+
+.bl-list {
+  overflow: hidden;
+  border: 1rpx solid #e3ebe3;
+  border-radius: 16rpx;
+}
+
+.bl-item {
+  display: flex;
+  align-items: center;
+  padding: 26rpx 22rpx;
+  border-top: 1rpx solid #e7eee7;
+}
+
+.bl-item:first-child {
+  border-top: 0;
+}
+
+.bl-code {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 82rpx;
+  height: 54rpx;
+  margin-right: 22rpx;
+  border-radius: 10rpx;
+  background: #5f8068;
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.bl-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.bl-name,
+.bl-desc {
+  display: block;
+}
+
+.bl-name {
+  color: #33483a;
+  font-size: 24rpx;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.bl-desc {
+  margin-top: 6rpx;
+  color: #7b887e;
+  font-size: 25rpx;
+  line-height: 1.5;
+}
+
+.bl-desc-en {
+  display: block;
+  margin-top: 5rpx;
+  color: #98a39b;
+  font-size: 21rpx;
+  line-height: 1.5;
 }
 
 .paragraph {
   display: block;
-  margin: 0;
-  padding: 0;
-  text-align: justify;
-  color: #333;
+  color: #59655d;
   font-size: 28rpx;
-  line-height: 1.8;
-}
-
-.paragraph .highlight {
-  color: #111111; /* 更深黑色 */
-  font-weight: 700; /* 加粗 */
-}
-.list-paragraph {
-  display: block;
-  margin: 0;
-  padding: 0;
+  line-height: 1.9;
   text-align: justify;
-  color: #4a4a4a; /* 与正文一致的深灰色 */
-  font-size: 28rpx;
-  line-height: 1.8;
 }
 
-.list-item {
+.bilingual-block {
+  padding-left: 22rpx;
+  border-left: 4rpx solid #d9e5da;
+}
+
+.second-block {
+  margin-top: 32rpx;
+}
+
+.paragraph-en {
   display: block;
-  margin-left: 24rpx; /* 轻微缩进，保持整洁 */
-  line-height: 1.8;
+  margin-top: 16rpx;
+  color: #89948c;
+  font-size: 23rpx;
+  line-height: 1.7;
+  text-align: left;
 }
 
+.closing {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 34rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 16rpx;
+  background: linear-gradient(145deg, #547660 0%, #365441 100%);
+}
 
-.subtitle {
+.closing-cn,
+.closing-en {
   display: block;
-  font-weight: 600;
-  margin: 24rpx 0 12rpx 0;
-  color: #222;
-}
-
-.footer {
+  color: #fff;
   text-align: center;
-  margin-top: 40rpx;
-  padding-top: 20rpx;
-  border-top: 1rpx solid #e0e6f1; /* 柔和分隔线 */
 }
 
-.footer-text {
-  font-size: 28rpx;
-  font-weight: 500;
-  color: #3b6ea5; /* 清新淡蓝色 */
-  letter-spacing: 1rpx;
+.closing-cn {
+  font-size: 30rpx;
+  font-weight: 600;
+  letter-spacing: 4rpx;
+  line-height: 1.7;
 }
 
+.closing-line {
+  width: 64rpx;
+  height: 2rpx;
+  margin: 20rpx 0 16rpx;
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.closing-en {
+  font-size: 21rpx;
+  line-height: 1.65;
+  opacity: 0.78;
+}
